@@ -1,0 +1,9 @@
+[user]
+	name = Björn Steffen
+	email = bjoern.steffen@inf.ethz.ch
+[core]
+	editor = emacsclient
+[color]
+	ui = true
+[alias]
+	lg = log --oneline --decorate --graph
