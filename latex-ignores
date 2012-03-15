@@ -1,0 +1,16 @@
+auto/
+style/
+*.log
+*.aux
+*.pdf
+*.toc
+*.ps
+*.dvi
+*.eps
+*.ind
+*.idx
+*.ilg
+*-blx.bib
+*.synctex.gz
+*.rel
+*.prv
