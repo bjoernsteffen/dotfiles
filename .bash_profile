@@ -7,13 +7,13 @@ export EDITOR="emacs"
 # export LC_ALL="en_US.ISO8859-1"
 # export LC_CTYPE="ISO8859-1"
 
-export PATH=/opt/subversion/bin:/usr/local/texlive/texmf-local/bin:~/.subversion/bin:~/.bin:$PATH
+export PATH=/usr/local/bin:$PATH
 
 export LSCOLORS="Gxfxcxdxbxegedabagacdx"
 alias ls="ls -FG"
 alias ll="ls -lh"
 
-export BIBTOOLRCS="/Users/Bjoern/.bibtoolrcs"
+# export BIBTOOLRCS="/Users/Bjoern/.bibtoolrcs"
 
 # Bash programs and functions
 function cs() {
@@ -22,9 +22,8 @@ function cs() {
 }
 
 # Subversion and Git completions
-source .subversion/svn_bash_completion
-source .git-completion.bash
+source /usr/local/etc/bash_completion.d/svn-completion.bash
+source /usr/local/etc/bash_completion.d/git-completion.bash
 
 # Subversion and Git status in prompt
 source .vcs-prompt.bash
-source /usr/local/Cellar/cdargs/1.35/contrib/cdargs-bash.sh
