@@ -27,3 +27,5 @@ source /usr/local/etc/bash_completion.d/git-completion.bash
 
 # Subversion and Git status in prompt
 source .vcs-prompt.bash
+
+function svndiff () { svn diff $@ | colordiff | less -R; }
