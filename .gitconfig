@@ -3,7 +3,24 @@
 	email = bjoern.steffen@inf.ethz.ch
 [core]
 	editor = emacsclient
+	excludesfile = ~/Library/dotfiles/gitignore_global
 [color]
 	ui = true
 [alias]
-	lg = log --oneline --decorate --graph
+	l = log --decorate --graph --oneline
+ 	ln = log --decorate --graph --pretty=format':%C(yellow)%h%C(blue)%d%Creset %s %C(white) %an, %ar%Creset'
+	s = status -s -b
+[diff]
+	tool = ediff
+        guitool = ediff
+
+[difftool "ediff"]
+        cmd = ~/Library/dotfiles/ediff.sh $LOCAL $REMOTE $MERGED
+
+[merge]
+        tool = ediff
+
+[mergetool "ediff"]
+        cmd = ~/Library/dotfiles/ediff.sh $LOCAL $REMOTE $MERGED $BASE
+        trustExitCode = true
+
