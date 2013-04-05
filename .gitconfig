@@ -7,12 +7,17 @@
 [color]
 	ui = true
 [alias]
-	l = log --decorate --graph --all --oneline
- 	ln = log --decorate --graph --all --pretty=format':%C(yellow)%h%C(blue)%d%Creset %s %C(white) %an, %ar%C(reset)%n'
-	ll = log --graph --all  --abbrev-commit --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%n'
+	l = log --decorate --graph --branches --tags --remotes --oneline
+	ll = log --graph --branches --tags --remotes  --abbrev-commit --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%n'
 	s = status -s -b
-	b = !~/Library/bin/gbrt.sh
+	bt = !~/Library/bin/gbrt.sh
+	b = branch
 	co = checkout
+	ignore = update-index --assume-unchanged
+	unignore = update-index --no-assume-unchanged
+	update = add --update
+	unstage = reset HEAD --
+
 [diff]
 	tool = ediff
         guitool = ediff
