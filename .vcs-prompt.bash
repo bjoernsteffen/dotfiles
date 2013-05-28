@@ -2,6 +2,8 @@
 # Display version control information from svn or git in prompt
 #
 
+
+
 # Parses Git or SVN info for prompt
 function _set_vcs_envar_info {
     VCS_LEADER=""
@@ -11,6 +13,7 @@ function _set_vcs_envar_info {
     GIT_PS1_SHOWDIRTYSTATE="*"
     GIT_PS1_SHOWSTASHSTATE="*"
     GIT_PS1_SHOWUPSTREAM="auto"
+    GIT_PS1_SHOWCOLORHINTS="*"
     local STATUS
     STATUS=$(svn info 2>/dev/null)
     if [[ -z $STATUS ]]

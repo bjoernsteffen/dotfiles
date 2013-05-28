@@ -24,6 +24,7 @@ function cs() {
 # Subversion and Git completions
 source /usr/local/etc/bash_completion.d/svn-completion.bash
 source /usr/local/etc/bash_completion.d/git-completion.bash
+source /usr/local/etc/bash_completion.d/git-prompt.sh
 
 # Subversion and Git status in prompt
 source .vcs-prompt.bash
