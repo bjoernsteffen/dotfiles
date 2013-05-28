@@ -14,3 +14,7 @@ style/
 *.synctex.gz
 *.rel
 *.prv
+*.nav
+*.out
+*.snm
+*.vrb
