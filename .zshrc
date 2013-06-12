@@ -52,3 +52,8 @@ source "$OMZ/init.zsh"
 # Customize to your needs...
 
 export LANG="en_US.UTF-8"
+
+alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
+alias e="emacsclient -n"
+alias ec="emacsclient -c"
+alias ea="emacsclient -a emacs"

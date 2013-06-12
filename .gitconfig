@@ -2,7 +2,7 @@
 	name = Björn Steffen
 	email = bjoern.steffen@inf.ethz.ch
 [core]
-	editor = emacsclient
+	editor = "emacsclient -a emacs"
 	excludesfile = ~/Library/dotfiles/gitignore_global
 [color]
 	ui = true
